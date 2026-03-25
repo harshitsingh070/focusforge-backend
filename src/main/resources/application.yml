@@ -1,0 +1,76 @@
+server:
+  port: ${PORT:8080}
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: focusforge
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      connection-timeout: 20000
+
+  jpa:
+    hibernate:
+      ddl-auto: ${HIBERNATE_DDL_AUTO:validate}
+    show-sql: ${SHOW_SQL:false}
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+  # FIXED: Changed from spring.redis to spring.data.redis
+  data:
+    redis:
+      enabled: false
+      host: localhost
+      port: 6379
+      timeout: 2000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+
+# Custom properties (will be read by @Value)
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 86400000
+
+gamification:
+  daily-point-cap: 100
+  base-points: 10
+  time-bonus-threshold-minutes: 20
+  time-bonus-step-minutes: 10
+  weekly-consistency-min-days: 5
+  weekly-consistency-bonus: 50
+  max-minutes-per-entry: 600
+  max-minutes-per-day: 960
+
+activity:
+  max-past-days: 30
+
+badges:
+  longest-streak-cache-ttl-hours: ${BADGE_STREAK_CACHE_TTL_HOURS:1}
+
+logging:
+  level:
+    com.focusforge: DEBUG
+    org.springframework.security: DEBUG
+
+resilience4j:
+  ratelimiter:
+    instances:
+      auth:
+        limit-for-period: ${AUTH_RATE_LIMIT:5}
+        limit-refresh-period: ${AUTH_RATE_REFRESH_PERIOD:1m}
+        timeout-duration: 0s
