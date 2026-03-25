@@ -18,10 +18,10 @@ public class CorsConfig {
         config.setAllowCredentials(true);
 
         // 🔥 IMPORTANT — add both frontend URLs
-        config.setAllowedOrigins(Arrays.asList(
-                "http://localhost:3000",
-                "https://focusforge-frontend.vercel.app"
-        ));
+        config.setAllowedOriginPatterns(Arrays.asList(
+    "http://localhost:3000",
+    "https://focusforge-frontend.vercel.app"
+     ));
 
         config.addAllowedHeader("*");
 
