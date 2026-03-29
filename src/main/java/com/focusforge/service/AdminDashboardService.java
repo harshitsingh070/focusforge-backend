@@ -1,18 +1,5 @@
 package com.focusforge.service;
 
-import com.focusforge.model.ActivityLog;
-import com.focusforge.model.Goal;
-import com.focusforge.model.PointLedger;
-import com.focusforge.model.User;
-import com.focusforge.repository.ActivityLogRepository;
-import com.focusforge.repository.GoalRepository;
-import com.focusforge.repository.PointLedgerRepository;
-import com.focusforge.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -24,10 +11,27 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.focusforge.model.ActivityLog;
+import com.focusforge.model.Goal;
+import com.focusforge.model.PointLedger;
+import com.focusforge.model.User;
+import com.focusforge.repository.ActivityLogRepository;
+import com.focusforge.repository.GoalRepository;
+import com.focusforge.repository.PointLedgerRepository;
+import com.focusforge.repository.UserRepository;
+
 @Service
 public class AdminDashboardService {
 
-    @Value("${app.admin.email:admin.focusforge@gmail.com}")
+    @Value("${app.admin.email}")
+
+
+
     private String adminEmail;
 
     @Autowired
