@@ -18,6 +18,7 @@ com\focusforge\dto\BadgeAwardDTO$BadgeAwardDTOBuilder.class
 com\focusforge\exception\ResourceNotFoundException.class
 com\focusforge\controller\EnhancedLeaderboardController.class
 com\focusforge\service\GamificationService.class
+com\focusforge\controller\AdminController.class
 com\focusforge\service\LeaderboardAggregationService$1.class
 com\focusforge\dto\ActivityResponse.class
 com\focusforge\dto\BadgeAwardDTO.class
@@ -83,6 +84,7 @@ com\focusforge\service\LeaderboardRefreshListener.class
 com\focusforge\service\BadgeEvaluationService$BadgeAward.class
 com\focusforge\service\StreakService.class
 com\focusforge\dto\DashboardDTO$GoalProgressDTO$GoalProgressDTOBuilder.class
+com\focusforge\service\AdminDashboardService.class
 com\focusforge\exception\GlobalExceptionHandler$ErrorResponse.class
 com\focusforge\service\ActivityService.class
 com\focusforge\repository\ActivityLogRepository.class
