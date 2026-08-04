@@ -25,6 +25,7 @@ C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforg
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\FocusforgeBackendApplication.java
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\service\AnalyticsAggregationService.java
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\service\StreakService.java
+C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\controller\HealthController.java
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\security\CustomUserDetailsService.java
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\service\NotificationService.java
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\model\ActivityLog.java
@@ -46,7 +47,9 @@ C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforg
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\controller\NotificationController.java
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\dto\ActivityResponse.java
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\model\Badge.java
+C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\config\SchedulerConfig.java
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\model\User.java
+C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\config\KeepAliveScheduler.java
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\repository\LeaderboardSnapshotRepository.java
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\service\EnhancedLeaderboardService.java
 C:\Users\harsh\Desktop\focusforge\focusforge-backend\src\main\java\com\focusforge\repository\GoalRepository.java

@@ -17,6 +17,7 @@ com\focusforge\event\ActivityLoggedEvent.class
 com\focusforge\dto\BadgeAwardDTO$BadgeAwardDTOBuilder.class
 com\focusforge\exception\ResourceNotFoundException.class
 com\focusforge\controller\EnhancedLeaderboardController.class
+com\focusforge\controller\HealthController.class
 com\focusforge\service\GamificationService.class
 com\focusforge\controller\AdminController.class
 com\focusforge\service\LeaderboardAggregationService$1.class
@@ -34,6 +35,7 @@ com\focusforge\dto\DashboardDTO$BadgeDTO.class
 com\focusforge\service\BadgeEvaluationService.class
 com\focusforge\controller\NotificationController.class
 com\focusforge\FocusforgeBackendApplication.class
+com\focusforge\config\SchedulerConfig.class
 com\focusforge\dto\DashboardDTO$RecentActivityDTO$RecentActivityDTOBuilder.class
 com\focusforge\security\CustomUserDetailsService.class
 com\focusforge\service\AuthService.class
@@ -98,6 +100,7 @@ com\focusforge\controller\GoalController.class
 com\focusforge\service\LeaderboardAggregationService.class
 com\focusforge\repository\PointLedgerRepository.class
 com\focusforge\controller\SettingsController.class
+com\focusforge\config\KeepAliveScheduler.class
 com\focusforge\dto\ActivityResponse$ActivityResponseBuilder.class
 com\focusforge\service\DashboardService.class
 com\focusforge\exception\GlobalExceptionHandler.class
